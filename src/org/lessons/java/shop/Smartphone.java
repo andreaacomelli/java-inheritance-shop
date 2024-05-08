@@ -21,7 +21,7 @@ public class Smartphone extends Prodotto {
     	System.out.print("Inserisci il codice imei: ");
         this.imei = scan.nextLong();
 
-        System.out.print("Inserisci il nome del prodotto: ");
+        System.out.print("la memoria in GB: ");
         this.memoriaGB = scan.nextInt();
         
         scan.close();

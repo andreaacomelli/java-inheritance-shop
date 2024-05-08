@@ -13,10 +13,10 @@ public class Prodotto {
 	public Prodotto(String nome, String marca, double prezzo, double iva) {
 		
 		this.codice = generaCodice();
-		this.setNome(nome);
-		this.setMarca(marca);
-		this.setPrezzo(prezzo);
-		this.setIva(iva);
+		this.nome = nome;
+		this.marca = marca;
+		this.prezzo = prezzo;
+		this.iva = iva;
 	}
 
     
@@ -34,13 +34,10 @@ public class Prodotto {
 
         System.out.print("Inserisci l'IVA del prodotto: ");
         this.iva = scan.nextDouble();
-        
-        scan.close();
 	}
     
     protected int generaCodice() {
 		return random.nextInt(100) + 1;
-		
 	}
 
 	public int getCodice() {
