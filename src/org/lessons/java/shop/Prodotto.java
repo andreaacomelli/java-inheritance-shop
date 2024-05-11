@@ -90,4 +90,16 @@ public class Prodotto {
     public String getNomeEsteso() {
         return codice + "-" + nome;
     }
+    
+    @Override
+    public String toString() {
+    	// TODO Auto-generated method stub
+    	return "Informazioni Prodotto: " + "\n" +
+    			"Codice: " + generaCodice() + "\n"+
+    			"Nome: " + nome + "\n" +
+    			"Nome esteso: " + getNomeEsteso() + "\n" +
+    			"Marca: " + marca + "\n" +
+    			"Prezzo base: " + getPrezzoBase() + "\n" +
+    			"prezzo con iva: " + getPrezzoConIva() + "\n";
+    }
 }

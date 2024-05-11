@@ -42,4 +42,12 @@ public class Smartphone extends Prodotto {
 	public void setMemoriaGB(int memoriaGB) {
 		this.memoriaGB = memoriaGB;
 	}
+	
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return super.toString() +
+				"Codice imei: "+ imei + "\n" +
+				"Memoria in GB: " + memoriaGB;
+	}
 }

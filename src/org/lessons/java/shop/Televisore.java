@@ -41,4 +41,12 @@ public class Televisore extends Prodotto{
 	public void setSmart(boolean smart) {
 		this.isSmart = smart;
 	}
+	
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return  super.toString() +
+				"Dimensione in pollici: " + pollici + "\n" +
+				"è smart?: " + isSmart;
+	}
 }
